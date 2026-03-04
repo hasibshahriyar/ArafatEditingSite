@@ -1,0 +1,140 @@
+.volume {
+    background: var(--color-white);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Left */
+.title {
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.checkIcon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta {
+    padding: 14px 36px !important;
+}
+
+/* Right — Pipeline */
+.right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.pipelineCard {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pipelineRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.stepNumber {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--color-bg-light);
+    color: var(--color-text-muted);
+    transition: var(--transition);
+}
+
+.stepActive {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.progressBar {
+    flex: 1;
+    height: 8px;
+    background: var(--color-bg-light);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    background: var(--color-bg-light);
+    width: var(--progress-width);
+    transition: width 1.5s ease;
+}
+
+.progressActive {
+    background: var(--color-primary);
+    animation: progressBar 1.5s ease-out;
+}
+
+.stepLabel {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    min-width: 100px;
+    text-align: right;
+}
+
+.labelActive {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

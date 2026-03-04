@@ -1,0 +1,114 @@
+.dashboard {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    background: var(--color-bg-light);
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+/* Status Card */
+.statusCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: var(--radius-md);
+    padding: 24px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.statusIcon {
+    color: var(--color-primary);
+    min-width: 24px;
+    margin-top: 2px;
+}
+
+.statusTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+}
+
+.statusDesc {
+    font-size: 14px;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* Preview Grid */
+.previewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.previewCard {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.previewCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.previewCard h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+}
+
+.previewCard p {
+    font-size: 13px;
+    color: var(--color-text-light);
+}
+
+.backBtn {
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .previewGrid {
+        grid-template-columns: 1fr;
+    }
+}
