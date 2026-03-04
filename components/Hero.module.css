@@ -6,6 +6,7 @@
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     background-color: var(--color-dark);
     overflow: hidden;
 }
@@ -79,6 +80,13 @@
     .hero {
         min-height: auto;
         padding: 120px 0 80px;
+        background-position: center center;
+    }
+
+    .heroOverlay {
+        background: linear-gradient(180deg,
+                rgba(20, 20, 40, 0.85) 0%,
+                rgba(20, 20, 40, 0.80) 100%);
     }
 
     .heroTitle {
