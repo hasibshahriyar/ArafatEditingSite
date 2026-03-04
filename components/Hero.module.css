@@ -3,7 +3,9 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url('/hero-bg.png') center right / cover no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--color-dark);
     overflow: hidden;
 }

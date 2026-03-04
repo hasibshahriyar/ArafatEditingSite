@@ -1,9 +1,15 @@
 import Link from 'next/link';
 import styles from './Hero.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Hero() {
     return (
-        <section className={styles.hero} id="hero">
+        <section
+            className={styles.hero}
+            id="hero"
+            style={{ backgroundImage: `url('${basePath}/hero-bg.png')` }}
+        >
             <div className={styles.heroOverlay} />
             <div className={`container ${styles.heroContent}`}>
                 <div className={styles.badge}>
