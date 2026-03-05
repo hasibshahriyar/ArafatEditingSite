@@ -22,6 +22,7 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/pricing', label: 'Pricing' },
     { href: '/dashboard', label: 'Dashboard' },
+    { href: '/login', label: 'Login' },
   ];
 
   return (
@@ -50,8 +51,8 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <Link href="/dashboard" className={`btn btn-primary ${styles.navCta}`}>
-          Get Started
+        <Link href="/signup" className={`btn btn-primary ${styles.navCta}`}>
+          Sign Up
         </Link>
 
         {/* Mobile Toggle */}
