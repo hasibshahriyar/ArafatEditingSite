@@ -46,6 +46,10 @@
 .logoText {
     font-size: 20px;
     font-weight: 700;
+    color: var(--color-white);
+}
+
+.scrolled .logoText {
     color: var(--color-dark);
 }
 
@@ -105,9 +109,13 @@
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--color-dark);
+    background: var(--color-white);
     border-radius: 2px;
     transition: var(--transition);
+}
+
+.scrolled .hamburger span {
+    background: var(--color-dark);
 }
 
 .hamburgerOpen span:nth-child(1) {
