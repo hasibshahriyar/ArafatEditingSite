@@ -3,12 +3,12 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     background-color: var(--color-dark);
     overflow: hidden;
+}
+
+.heroBgImage {
+    object-position: center right;
 }
 
 .heroOverlay {
@@ -80,7 +80,10 @@
     .hero {
         min-height: auto;
         padding: 120px 0 80px;
-        background-position: center center;
+    }
+
+    .heroBgImage {
+        object-position: center center;
     }
 
     .heroOverlay {

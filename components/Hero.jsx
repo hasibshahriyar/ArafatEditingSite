@@ -1,15 +1,20 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Hero.module.css';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 export default function Hero() {
     return (
-        <section
-            className={styles.hero}
-            id="hero"
-            style={{ backgroundImage: `url('${basePath}/hero-bg.png')` }}
-        >
+        <section className={styles.hero} id="hero">
+            <Image
+                src="https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&w=1920&fit=max"
+                alt="F1 racing car on track"
+                fill
+                priority
+                unoptimized
+                className={styles.heroBgImage}
+                style={{ objectFit: 'cover' }}
+                sizes="100vw"
+            />
             <div className={styles.heroOverlay} />
             <div className={`container ${styles.heroContent}`}>
                 <div className={styles.badge}>
